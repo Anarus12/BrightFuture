@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>Beasiswa 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-black p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-semibold">Beasiswa 2024</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="dashboard.html" class="hover:text-gray-300">Dashboard</a>
+                <a href="Bright lomba.html" class="hover:text-gray-300">Lomba</a>
+                <a href="bright beasiswa.html" class="hover:text-gray-300">Beasiswa</a>
+                <a href="bright study abroad.html" class="hover:text-gray-300">Study Abroad</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Dashboard</a>
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Lomba</a>
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Beasiswa</a>
+            <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Study Abroad</a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col">
+        <!-- bagian ngefilter section -->
+        <div class="w-full bg-blue-800 p-4 text-white">
+            <h2 class="text-lg font-semibold mb-4">Filter</h2>
+            <div class="mb-6">
+                <h3 class="text-md font-medium mb-2">Jenjang</h3>
+                <div class="flex flex-wrap space-x-4">
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>SMP</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>SMA</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>D2</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>D3</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>D4</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>S1</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>S2</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>S3</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Non-Degree</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Gap Year</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Profesi</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-md font-medium mb-2">Tipe</h3>
+                <div class="flex flex-wrap space-x-4">
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Fully Funded</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Partially Funded</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Mentoring</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Riset</label>
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2 form-checkbox h-5 w-5 text-purple-600">
+                        <label>Exchange</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bagian Content -->
+        <div class="w-full p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h1 class="text-2xl font-bold">2024</h1>
+                <div class="flex items-center space-x-2">
+                    <button class="p-2 bg-gray-200 rounded"><i class="fas fa-chevron-left"></i></button>
+                    <button class="p-2 bg-gray-200 rounded"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="flex flex-wrap space-x-2 mb-6">
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">JAN</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">FEB</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">MAR</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">APR</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">MEI</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">JUN</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">JUL</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">AGU</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">SEP</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">OKT</button>
+                <button class="px-4 py-2 bg-blue-800 text-white rounded mb-2">NOV</button>
+                <button class="px-4 py-2 bg-purple-100 rounded mb-2">DES</button>
+            </div>
+            <h2 class="text-xl font-semibold mb-4">Beasiswa Bulan November</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="font-bold">SMA</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Beasiswa Penuh SMA Islam Al-Azhar 24 Boarding School</h3>
+                            <p>Indonesia</p>
+                            <p>Mulai: 09 Sep 2024</p>
+                            <p class="text-red-500">Deadline: 30 Nov 2024</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-400"><i class="far fa-bookmark"></i></button>
+                </div>
+                <div class="bg-white p-4 rounded shadow flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="font-bold">S1</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Beasiswa Undergraduate Scholarships, Singapore Management University</h3>
+                            <p>Singapura</p>
+                            <p>Mulai: 01 Nov 2024</p>
+                            <p class="text-red-500">Deadline: 19 Mar 2025</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-400"><i class="far fa-bookmark"></i></button>
+                </div>
+                <div class="bg-white p-4 rounded shadow flex items-center justify-between">
+                    <div class="flex items-center">
+                        <div class="bg-purple-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <span class="font-bold">S2 S3</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Beasiswa King Fahd University of Petroleum and Minerals, Arab Saudi</h3>
+                            <p>Saudi Arabia</p>
+                            <p>Mulai: 01 Nov 2024</p>
+                            <p class="text-red-500">Deadline: 12 Dec 2024</p>
+                        </div>
+                    </div>
+                    <button class="text-gray-400"><i class="far fa-bookmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="fixed bottom-4 right-4 bg-purple-500 text-white p-4 rounded-full shadow-lg flex items-center">
+        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+    </button>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   EduExchange
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script>
+   function toggleMenu() {
+     const menu = document.getElementById('mobile-menu');
+     menu.classList.toggle('hidden');
+   }
+
+   function setActive(button) {
+     const buttons = document.querySelectorAll('.filter-button');
+     buttons.forEach(btn => btn.classList.remove('bg-blue-600'));
+     buttons.forEach(btn => btn.classList.add('bg-gray-700'));
+     button.classList.remove('bg-gray-700');
+     button.classList.add('bg-blue-600');
+   }
+
+   function redirectToPage() {
+     window.location.href = 'https://example.com'; // Replace with the actual URL
+   }
+  </script>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex flex-col lg:flex-row">
+   <!-- Sidebar -->
+   <div class="w-full lg:w-1/5 bg-gray-800 h-auto lg:h-screen p-4">
+    <div class="flex justify-between items-center mb-6">
+     <div class="text-xl font-bold">
+      eduexchange
+     </div>
+     <button class="lg:hidden" onclick="toggleMenu()">
+      <i class="fas fa-bars text-xl">
+      </i>
+     </button>
+    </div>
+    <nav class="space-y-4 hidden lg:block" id="mobile-menu">
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="dashboard.html">
+      Dashboard
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">
+      Program
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">
+      Jadwal
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">
+      Info Pertukaran
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">
+      Chat
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700" href="#">
+      Bookmark
+     </a>
+     <a class="block py-2 px-4 rounded hover:bg-gray-700 text-red-500" href="#">
+      Keluar
+     </a>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="w-full lg:w-4/5 p-6">
+    <div class="flex flex-col lg:flex-row justify-between items-center mb-6">
+     <h1 class="text-2xl font-bold mb-4 lg:mb-0">
+      Info Pertukaran
+     </h1>
+     <div class="flex items-center space-x-2">
+      <input class="p-2 rounded bg-gray-700 text-white" placeholder="Cari" type="text"/>
+      <button class="p-2 rounded bg-gray-700 text-white">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+    </div>
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap space-x-2 mb-6">
+     <button class="filter-button px-4 py-2 rounded bg-blue-600 mb-2" onclick="setActive(this)">
+      Semua
+     </button>
+     <button class="filter-button px-4 py-2 rounded bg-gray-700 mb-2" onclick="setActive(this)">
+      SMP
+     </button>
+     <button class="filter-button px-4 py-2 rounded bg-gray-700 mb-2" onclick="setActive(this)">
+      SMA/SMK
+     </button>
+     <button class="filter-button px-4 py-2 rounded bg-gray-700 mb-2" onclick="setActive(this)">
+      S1/D4
+     </button>
+    </div>
+    <!-- Exchange Info Cards -->
+    <div class="space-y-4">
+     <div class="bg-gray-800 p-4 rounded flex flex-col lg:flex-row justify-between items-center">
+      <div class="flex items-center space-x-4 mb-4 lg:mb-0">
+       <img alt="Image of Japan exchange program" class="w-20 h-20 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/gQs0foNQ_FUdDGQoinw_cMFkjqMfo_BV8tkuOZ2i4Pk.jpg" width="100"/>
+       <div>
+        <h2 class="text-xl font-bold">
+         Pertukaran ke Jepang
+        </h2>
+        <p>
+         Program untuk siswa SMA/SMK untuk merasakan budaya dan pendidikan Jepang.
+        </p>
+        <div class="flex space-x-2 mt-2">
+         <span class="px-2 py-1 rounded bg-gray-700">
+          SMA/SMK
+         </span>
+         <span class="px-2 py-1 rounded bg-gray-700">
+          Internasional
+         </span>
+        </div>
+        <p class="mt-2 text-gray-400">
+         Mulai: 18 November - 17 Januari
+        </p>
+       </div>
+      </div>
+      <button class="px-4 py-2 rounded bg-blue-600" onclick="redirectToPage()">
+       Daftar
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded flex flex-col lg:flex-row justify-between items-center">
+      <div class="flex items-center space-x-4 mb-4 lg:mb-0">
+       <img alt="Image of USA exchange program" class="w-20 h-20 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/MsnSfuc1a6_CADvOgWH26gh7--nrSGDTPcHk45fmrPU.jpg" width="100"/>
+       <div>
+        <h2 class="text-xl font-bold">
+         Pertukaran ke USA
+        </h2>
+        <p>
+         Program ini menawarkan kesempatan bagi mahasiswa S1/D4 untuk belajar di USA.
+        </p>
+        <div class="flex space-x-2 mt-2">
+         <span class="px-2 py-1 rounded bg-gray-700">
+          S1/D4
+         </span>
+         <span class="px-2 py-1 rounded bg-gray-700">
+          Internasional
+         </span>
+        </div>
+        <p class="mt-2 text-gray-400">
+         Mulai: 18 November - 10 Januari
+        </p>
+       </div>
+      </div>
+      <button class="px-4 py-2 rounded bg-blue-600" onclick="redirectToPage()">
+       Daftar
+      </button>
+     </div>
+     <div class="bg-gray-800 p-4 rounded flex flex-col lg:flex-row justify-between items-center">
+      <div class="flex items-center space-x-4 mb-4 lg:mb-0">
+       <img alt="Image of Australia exchange program" class="w-20 h-20 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/XiP98dyYm1ZLmsCn22hyyeJM9ZYHduAK_TPEARYzjWc.jpg" width="100"/>
+       <div>
+        <h2 class="text-xl font-bold">
+         Pertukaran ke Australia
+        </h2>
+        <p>
+         Program untuk siswa SMP untuk merasakan pendidikan di Australia.
+        </p>
+        <div class="flex space-x-2 mt-2">
+         <span class="px-2 py-1 rounded bg-gray-700">
+          SMP
+         </span>
+         <span class="px-2 py-1 rounded bg-gray-700">
+          Internasional
+         </span>
+        </div>
+        <p class="mt-2 text-gray-400">
+         Mulai: 3 Januari - 19 Februari
+        </p>
+       </div>
+      </div>
+      <button class="px-4 py-2 rounded bg-blue-600" onclick="redirectToPage()">
+       Daftar
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Right Sidebar -->
+   <div class="w-full lg:w-1/5 bg-gray-800 h-auto lg:h-screen p-4">
+    <div class="text-xl font-bold mb-6">
+     Juli 2023
+    </div>
+    <div class="mb-6">
+     <div class="grid grid-cols-7 gap-2 text-center text-gray-400">
+      <div>
+       Min
+      </div>
+      <div>
+       Sen
+      </div>
+      <div>
+       Sel
+      </div>
+      <div>
+       Rab
+      </div>
+      <div>
+       Kam
+      </div>
+      <div>
+       Jum
+      </div>
+      <div>
+       Sab
+      </div>
+     </div>
+     <div class="grid grid-cols-7 gap-2 text-center mt-2">
+      <div class="text-gray-600">
+       25
+      </div>
+      <div class="text-gray-600">
+       26
+      </div>
+      <div class="text-gray-600">
+       27
+      </div>
+      <div class="text-gray-600">
+       28
+      </div>
+      <div class="text-gray-600">
+       29
+      </div>
+      <div class="text-gray-600">
+       30
+      </div>
+      <div class="text-gray-600">
+       1
+      </div>
+      <div>
+       2
+      </div>
+      <div>
+       3
+      </div>
+      <div>
+       4
+      </div>
+      <div>
+       5
+      </div>
+      <div>
+       6
+      </div>
+      <div>
+       7
+      </div>
+      <div>
+       8
+      </div>
+      <div>
+       9
+      </div>
+      <div>
+       10
+      </div>
+      <div>
+       11
+      </div>
+      <div>
+       12
+      </div>
+      <div>
+       13
+      </div>
+      <div>
+       14
+      </div>
+      <div>
+       15
+      </div>
+      <div>
+       16
+      </div>
+      <div>
+       17
+      </div>
+      <div>
+       18
+      </div>
+      <div>
+       19
+      </div>
+      <div>
+       20
+      </div>
+      <div>
+       21
+      </div>
+      <div>
+       22
+      </div>
+      <div>
+       23
+      </div>
+      <div>
+       24
+      </div>
+      <div>
+       25
+      </div>
+      <div>
+       26
+      </div>
+      <div>
+       27
+      </div>
+      <div>
+       28
+      </div>
+      <div>
+       29
+      </div>
+      <div>
+       30
+      </div>
+      <div>
+       31
+      </div>
+      <div class="text-gray-600">
+       1
+      </div>
+      <div class="text-gray-600">
+       2
+      </div>
+      <div class="text-gray-600">
+       3
+      </div>
+      <div class="text-gray-600">
+       4
+      </div>
+      <div class="text-gray-600">
+       5
+      </div>
+     </div>
+    </div>
+    <div class="text-xl font-bold mb-4">
+     Mentor
+    </div>
+    <div class="space-y-4 mb-6">
+     <div class="flex items-center space-x-4">
+      <img alt="Mentor John Wilson" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/e3k6s-tqG3wZraLru5atzkuzH2E6uWVPDBhVJNaxGFY.jpg" width="50"/>
+      <div>
+       <h3 class="font-bold">
+        John Wilson
+       </h3>
+       <p class="text-gray-400">
+        Koordinator Program
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-4">
+      <img alt="Mentor Jane Smith" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/hhBoUX3Te_RdmJ976Ux_VSXv7Zq6AbeYSqEF9_6kG_0.jpg" width="50"/>
+      <div>
+       <h3 class="font-bold">
+        Jane Smith
+       </h3>
+       <p class="text-gray-400">
+        Pengajar Bahasa
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-4">
+      <img alt="Mentor Sofia Harris" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/BZ5j4gdTPArygGnXKnMhygEReoHd8kU4oWNWj1F9_Kg.jpg" width="50"/>
+      <div>
+       <h3 class="font-bold">
+        Sofia Harris
+       </h3>
+       <p class="text-gray-400">
+        Pengajar Budaya
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-4">
+      <img alt="Mentor Eva Smith" class="w-12 h-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/Va0yktztMwFdbl1dHhPh0d9oohaEIgPuaulr_54d9GM.jpg" width="50"/>
+      <div>
+       <h3 class="font-bold">
+        Eva Smith
+       </h3>
+       <p class="text-gray-400">
+        Pengajar Sejarah
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="text-xl font-bold mb-4">
+     Proses Belajar
+    </div>
+    <div class="space-y-2">
+     <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-blue-600">
+      </div>
+      <p class="text-gray-400">
+       Pendaftaran
+      </p>
+     </div>
+     <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-blue-600">
+      </div>
+      <p class="text-gray-400">
+       Seleksi
+      </p>
+     </div>
+     <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-blue-600">
+      </div>
+      <p class="text-gray-400">
+       Pengumuman
+      </p>
+     </div>
+     <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-blue-600">
+      </div>
+      <p class="text-gray-400">
+       Persiapan
+      </p>
+     </div>
+     <div class="flex items-center space-x-2">
+      <div class="w-2 h-2 rounded-full bg-blue-600">
+      </div>
+      <p class="text-gray-400">
+       Keberangkatan
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

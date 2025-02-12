@@ -1,0 +1,328 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Bright Future
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-[#7AB2D3]">
+  <div class="flex flex-col md:flex-row min-h-screen">
+   <!-- Sidebar -->
+   <div class="w-full md:w-64 bg-[#4A628A] h-full md:min-h-screen shadow-md flex flex-col justify-between">
+    <div>
+     <div class="p-4 flex items-center justify-between md:justify-start">
+      <div class="text-2xl font-bold text-white">
+       Bright Future
+      </div>
+      <button class="md:hidden text-white focus:outline-none" id="menu-button">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </div>
+     <nav class="mt-10 hidden md:block" id="menu">
+      <a class="flex items-center p-2 text-white hover:bg-gray-200 hover:text-gray-600" href="dashboard.html">
+       <i class="fas fa-tachometer-alt mr-3">
+       </i>
+       <span>
+        Dashboard
+       </span>
+      </a>
+      <a class="flex items-center p-2 text-white hover:bg-gray-200 hover:text-gray-600" href="Bright lomba.html">
+       <i class="fas fa-trophy mr-3">
+       </i>
+       <span>
+        Lomba
+       </span>
+      </a>
+      <a class="flex items-center p-2 text-white hover:bg-gray-200 hover:text-gray-600" href="bright beasiswa.html">
+       <i class="fas fa-graduation-cap mr-3">
+       </i>
+       <span>
+        Beasiswa
+       </span>
+      </a>
+      <a class="flex items-center p-2 text-white hover:bg-gray-200 hover:text-gray-600" href="volunteer.html">
+       <i class="fas fa-hands-helping mr-3">
+       </i>
+       <span>
+        Volunteer
+       </span>
+      </a>
+      <a class="flex items-center p-2 text-white hover:bg-gray-200 hover:text-gray-600" href="bright study abroad.html">
+       <i class="fas fa-globe mr-3">
+       </i>
+       <span>
+        Study Abroad
+       </span>
+      </a>
+     </nav>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <div class="text-2xl font-bold">
+      Dashboard
+     </div>
+     <div class="flex items-center space-x-4">
+      <i class="fas fa-bell text-gray-600">
+      </i>
+      <img alt="User avatar" class="rounded-full" height="40" src="https://storage.googleapis.com/a1aa/image/6ByldoCH2zXfBg8s1eGyTGeWjDTXuF2-rtV-JIMLqm8.jpg" width="40"/>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <img alt="A group of students participating in a competition" class="w-full h-40 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ufI4mkREpYiSvPCfgKvZ2etro0tsNTc4VzZFmF0vKXA.jpg" width="300"/>
+      <div class="flex justify-between items-center mb-4">
+       <div>
+        <div class="text-gray-600">
+         Informasi Lomba
+        </div>
+        <div class="text-3xl font-bold">
+         12 Lomba
+        </div>
+       </div>
+      </div>
+      <div class="flex justify-between items-center">
+       <a class="bg-pink-500 text-white px-4 py-2 rounded" href="Bright lomba.html">
+        <i class="fas fa-heart">
+        </i>
+        Lihat Semua
+       </a>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <img alt="A student receiving a scholarship award" class="w-full h-40 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/zQaYSX-kMPoC7RIW_paBjrZOLhaIKtOMPu-xAqfdzgQ.jpg" width="300"/>
+      <div class="text-gray-600">
+       Informasi Beasiswa
+      </div>
+      <div class="text-3xl font-bold">
+       8 Beasiswa
+      </div>
+      <div class="flex justify-between items-center mt-4">
+       <a class="bg-pink-500 text-white px-4 py-2 rounded" href="bright beasiswa.html">
+        <i class="fas fa-heart">
+        </i>
+        Lihat Semua
+       </a>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <img alt="Volunteers working together on a community project" class="w-full h-40 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/LcoPFeJYgK5H-rgDfO29oxX9hGMmZtFJbjvdHd7QqrQ.jpg" width="300"/>
+      <div class="text-gray-600">
+       Informasi Volunteer
+      </div>
+      <div class="text-3xl font-bold">
+       5 Volunteer
+      </div>
+      <div class="flex justify-between items-center mt-4">
+       <a class="bg-pink-500 text-white px-4 py-2 rounded" href="volunteer.html">
+        <i class="fas fa-heart">
+        </i>
+        Lihat Semua
+       </a>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <img alt="Students studying abroad in a foreign country" class="w-full h-40 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/Pis5jBTzU9KgMEyeMKgiBoG2wQPI0qIT8iDiSBm0lXs.jpg" width="300"/>
+      <div class="text-gray-600">
+       Informasi Study Abroad
+      </div>
+      <div class="text-3xl font-bold">
+       10 Program
+      </div>
+      <div class="flex justify-between items-center mt-4">
+       <a class="bg-pink-500 text-white px-4 py-2 rounded" href="bright study abroad.html">
+        <i class="fas fa-heart">
+        </i>
+        Lihat Semua
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="mt-10">
+     <div class="text-center py-10">
+      <h1 class="text-4xl font-bold">
+       User
+       <span class="text-blue-500">
+        Testimonials
+       </span>
+      </h1>
+     </div>
+     <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 px-4">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center w-full md:w-1/3">
+       <div class="flex justify-center mb-4">
+        <img alt="zaryan" class="rounded-full border-4 border-white -mt-16" height="100" src="img/p1.jpeg" width="100"/>
+       </div>
+       <div class="mb-4">
+        <div class="flex justify-center text-blue-500">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <h2 class="text-xl font-bold mt-2">
+ bang zaryan     
+        </h2>
+        <p class="text-gray-500">
+         member bright Future
+        </p>
+       </div>
+       <div class="text-gray-600">
+        <i class="fas fa-quote-left text-blue-500 text-2xl">
+        </i>
+        <p class="mt-2">
+         Lorem Ipsum is simply dummy text of the Printing industry Lorem Ipsum has been industry's.
+        </p>
+       </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-blue-500 rounded-lg shadow-lg p-6 text-center w-full md:w-1/3 text-white">
+       <div class="flex justify-center mb-4">
+        <img alt="Portrait of Parvez Hossein" class="rounded-full border-4 border-white -mt-16" height="100" src="img/p2.jpeg" width="100"/>
+       </div>
+       <div class="mb-4">
+        <div class="flex justify-center">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <h2 class="text-xl font-bold mt-2">
+         bang akmal
+        </h2>
+        <p>
+        member bright future
+        </p>
+       </div>
+       <div>
+        <i class="fas fa-quote-left text-2xl">
+        </i>
+        <p class="mt-2">
+         Lorem Ipsum is simply dummy text of the Printing industry Lorem Ipsum has been industry's.
+        </p>
+       </div>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center w-full md:w-1/3">
+       <div class="flex justify-center mb-4">
+        <img alt="Portrait of Shoikot Hasan" class="rounded-full border-4 border-white -mt-16" height="100" src="img/oyen.jpg" width="100"/>
+       </div>
+       <div class="mb-4">
+        <div class="flex justify-center text-blue-500">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+        <h2 class="text-xl font-bold mt-2">
+        bang oyen
+        </h2>
+        <p class="text-gray-500">
+         member bright future
+        </p>
+       </div>
+       <div class="text-gray-600">
+        <i class="fas fa-quote-left text-blue-500 text-2xl">
+        </i>
+        <p class="mt-2">
+         Lorem Ipsum is simply dummy text of the Printing industry Lorem Ipsum has been industry's.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mt-10">
+     <div class="text-2xl font-bold mb-6">
+      Keberhasilan
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-gray-600 mb-4">
+        Lomba
+       </div>
+       <div class="text-3xl font-bold">
+        50+
+       </div>
+       <div class="text-gray-600">
+        Lomba yang berhasil dimenangkan oleh pengguna
+       </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-gray-600 mb-4">
+        Beasiswa
+       </div>
+       <div class="text-3xl font-bold">
+        30+
+       </div>
+       <div class="text-gray-600">
+        Beasiswa yang berhasil didapatkan oleh pengguna
+       </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-gray-600 mb-4">
+        Volunteer
+       </div>
+       <div class="text-3xl font-bold">
+        20+
+       </div>
+       <div class="text-gray-600">
+        Program volunteer yang berhasil diikuti oleh pengguna
+       </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <div class="text-gray-600 mb-4">
+        Study Abroad
+       </div>
+       <div class="text-3xl font-bold">
+        15+
+       </div>
+       <div class="text-gray-600">
+        Program study abroad yang berhasil diikuti oleh pengguna
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+  </script>
+ </body>
+</html>
