@@ -1,71 +1,68 @@
-<html>
+<html lang="en">
  <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <title>
-   Bright Future
+  Bright lomba
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <script>
-    function toggleMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-  </script>
  </head>
  <body class="bg-blue-900 text-white">
-  <div class="flex flex-col lg:flex-row">
+  <div class="flex flex-col md:flex-row">
    <!-- Sidebar -->
-   <div class="w-full lg:w-1/4 bg-white text-black p-4">
-    <div class="flex justify-between items-center">
-      <h1 class="text-2xl font-bold mb-4">
-       Bright Future
-      </h1>
-      <button class="lg:hidden" onclick="toggleMenu()">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
-    </div>
-    <ul id="mobile-menu" class="lg:block hidden">
-     <li class="mb-2">
-      <a class="hover:text-blue-500" href="dashboard.html">
+   <div class="bg-white text-black w-full md:w-1/4 p-4">
+    <h1 class="text-2xl font-bold mb-4">
+     EduLomba
+    </h1>
+    <ul class="space-y-2">
+     <li>
+      <a class="block py-2 px-4 rounded hover:bg-gray-200" href="dashboard.html">
        Home
       </a>
      </li>
-     <li class="mb-2">
-      <a class="hover:text-blue-500" href="Bright lomba.html">
+     <li>
+      <a class="block py-2 px-4 rounded hover:bg-gray-200" href="Bright lomba.html">
        Lomba
       </a>
      </li>
-     <li class="mb-2">
-      <a class="hover:text-blue-500" href="dashboard.html">
+     <li>
+      <a class="block py-2 px-4 rounded hover:bg-gray-200" href="#">
        Tentang Kami
       </a>
      </li>
-     <li class="mb-2">
-      <a class="hover:text-blue-500" href="dashboard.html">
+     <li>
+      <a class="block py-2 px-4 rounded hover:bg-gray-200" href="#">
        Kontak
       </a>
      </li>
     </ul>
-    <button class="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-700">
-     Fixar Mentoring
-    </button>
+    <div class="mt-6 p-4 bg-purple-500 text-center rounded">
+     <p class="mb-2">
+      Fitur Mentoring
+     </p>
+     <button class="bg-purple-700 text-white py-2 px-4 rounded">
+      Learn More
+     </button>
+    </div>
    </div>
    <!-- Main Content -->
-   <div class="w-full lg:w-3/4 p-4">
+   <div class="flex-1 p-4">
     <!-- Search Bar -->
     <div class="mb-4">
      <input class="w-full p-2 rounded" placeholder="Search..." type="text"/>
     </div>
     <!-- Welcome Section -->
-    <div class="bg-blue-700 p-4 rounded mb-4">
+    <div class="bg-blue-600 p-4 rounded mb-4">
      <h2 class="text-xl font-bold mb-2">
       Selamat Datang di InfoLomba
      </h2>
      <p class="mb-2">
       Temukan berbagai informasi lomba untuk siswa SMA/SMK hingga mahasiswa. Mulai dari olimpiade, karya ilmiah, esai, dan banyak lagi.
      </p>
-     <img alt="Welcome image showing various competitions" class="mb-2 rounded" height="200" src="https://storage.googleapis.com/a1aa/image/iGnMU4B40nDosZpWMnSH1BAwYe3iqwHfKqzBbLSwacA.jpg" width="600"/>
-     <button class="bg-yellow-500 text-black py-2 px-4 rounded hover:bg-yellow-600">
+     <img alt="Welcome image" class="mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/xRn3wNPc6o0BtmnG4mVpIurVcCji4Ek44t2Eoeyt0qU.jpg" width="100"/>
+     <button class="bg-blue-800 text-white py-2 px-4 rounded">
       Learn more
      </button>
     </div>
@@ -73,95 +70,96 @@
     <h2 class="text-xl font-bold mb-4">
      Daftar Lomba
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-     <!-- Lomba Item 1 -->
-     <div class="bg-blue-800 p-4 rounded">
-      <img alt="Olimpiade Matematika image" class="mb-2 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/PGTArKa3kMIU6BF_2CBhGgr7c6EYuga6wNACKGAOgPE.jpg" width="150"/>
-      <h3 class="text-lg font-bold mb-2">
-       Olimpiade Matematika
-      </h3>
-      <p class="mb-2">
-       Uji kemampuan matematika Anda dalam olimpiade ini.
-      </p>
-      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+     <!-- Lomba 1 -->
+     <div class="bg-white text-black p-4 rounded h-64 flex flex-col justify-between">
+      <img alt="Olimpiade Matematika" class="mb-2 h-32 w-full object-cover rounded" src="https://storage.googleapis.com/a1aa/image/wVULia_JJDotqrwC_1ACmSPeT8bPD2QpPP905twyVpo.jpg"/>
+      <div>
+       <h3 class="text-lg font-bold mb-2">
+        Olimpiade Matematika
+       </h3>
+       <p class="mb-2 text-sm">
+        Lomba ini diadakan untuk siswa SMA/SMK. Ayo tunjukkan kemampuan matematika Anda!
+       </p>
+      </div>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">
        Detail
       </button>
      </div>
-     <!-- Lomba Item 2 -->
-     <div class="bg-blue-800 p-4 rounded">
-      <img alt="Lomba Karya Ilmiah image" class="mb-2 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/GKQ2EsucQecnnBk9Tvzb7HlbHjO2BuAmLp1K2YD4jj0.jpg" width="150"/>
-      <h3 class="text-lg font-bold mb-2">
-       Lomba Karya Ilmiah
-      </h3>
-      <p class="mb-2">
-       Tunjukkan penelitian terbaik Anda dalam lomba ini.
-      </p>
-      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+     <!-- Lomba 2 -->
+     <div class="bg-white text-black p-4 rounded h-64 flex flex-col justify-between">
+      <img alt="Lomba Karya Ilmiah" class="mb-2 h-32 w-full object-cover rounded" src="https://storage.googleapis.com/a1aa/image/mu_GsOorY3kcmxvWv46Z3-_acl0s1IoxSRZJfTRQ_KY.jpg"/>
+      <div>
+       <h3 class="text-lg font-bold mb-2">
+        Lomba Karya Ilmiah
+       </h3>
+       <p class="mb-2 text-sm">
+        Lomba ini terbuka untuk mahasiswa. Tunjukkan penelitian terbaik Anda!
+       </p>
+      </div>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">
        Detail
       </button>
      </div>
-     <!-- Lomba Item 3 -->
-     <div class="bg-blue-800 p-4 rounded">
-      <img alt="Lomba Esai Nasional image" class="mb-2 rounded" height="100" src="https://storage.googleapis.com/a1aa/image/MgI3o23AeXon4sE008SCBSYgGhRDwMZNHv1KxNx0SlQ.jpg" width="150"/>
-      <h3 class="text-lg font-bold mb-2">
-       Lomba Esai Nasional
-      </h3>
-      <p class="mb-2">
-       Tulis esai terbaik Anda dan menangkan lomba ini.
-      </p>
-      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+     <!-- Lomba 3 -->
+     <div class="bg-white text-black p-4 rounded h-64 flex flex-col justify-between">
+      <img alt="Lomba Esai Nasional" class="mb-2 h-32 w-full object-cover rounded" src="https://storage.googleapis.com/a1aa/image/FkXcENht96MxeBtP-KfteiqAO_H46N8_W_Xu4NMy3-g.jpg"/>
+      <div>
+       <h3 class="text-lg font-bold mb-2">
+        Lomba Esai Nasional
+       </h3>
+       <p class="mb-2 text-sm">
+        Lomba ini terbuka untuk umum. Tulis esai terbaik Anda dan menangkan hadiah menarik!
+       </p>
+      </div>
+      <button class="bg-blue-600 text-white py-2 px-4 rounded">
        Detail
       </button>
      </div>
     </div>
    </div>
    <!-- Sidebar Right -->
-   <div class="w-full lg:w-1/4 p-4">
-    <!-- Pencapaian Terbaru -->
+   <div class="bg-blue-800 text-white w-full md:w-1/4 p-4">
     <h2 class="text-xl font-bold mb-4">
      Pencapaian Terbaru
     </h2>
-    <ul class="mb-4">
-     <li class="mb-2">
+    <ul class="space-y-2 mb-4">
+     <li>
       Juara 1 Olimpiade Matematika
      </li>
-     <li class="mb-2">
+     <li>
       Juara 2 Lomba Karya Ilmiah
      </li>
-     <li class="mb-2">
+     <li>
       Juara 3 Lomba Esai Nasional
      </li>
-     <li class="mb-2">
-      Juara 1 Lomba Debat
-     </li>
     </ul>
-    <!-- Lomba Terpopuler -->
     <h2 class="text-xl font-bold mb-4">
      Lomba Terpopuler
     </h2>
-    <ul>
-     <li class="mb-2">
+    <ul class="space-y-2">
+     <li>
       Olimpiade Matematika
-      <span class="text-yellow-500">
-       4.5
-      </span>
-     </li>
-     <li class="mb-2">
-      Lomba Karya Ilmiah
-      <span class="text-yellow-500">
+      <span class="bg-blue-600 py-1 px-2 rounded">
        4.8
       </span>
      </li>
-     <li class="mb-2">
+     <li>
+      Lomba Karya Ilmiah
+      <span class="bg-blue-600 py-1 px-2 rounded">
+       4.7
+      </span>
+     </li>
+     <li>
       Lomba Esai Nasional
-      <span class="text-yellow-500">
+      <span class="bg-blue-600 py-1 px-2 rounded">
        4.6
       </span>
      </li>
-     <li class="mb-2">
+     <li>
       Lomba Debat
-      <span class="text-yellow-500">
-       4.7
+      <span class="bg-blue-600 py-1 px-2 rounded">
+       4.5
       </span>
      </li>
     </ul>
